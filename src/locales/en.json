@@ -1,0 +1,10 @@
+{
+  "message": "hello i18n !!",
+  "nav": {
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register"
+  }
+}
