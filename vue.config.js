@@ -8,5 +8,9 @@ module.exports = {
       includeLocales: false,
       enableBridge: true
     }
-  }
+  },
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 }

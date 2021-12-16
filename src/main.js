@@ -6,6 +6,9 @@ import i18n from './i18n'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import vuetify from './plugins/vuetify'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false
 
@@ -21,9 +24,12 @@ router.beforeEach((to, from, next) => {
 
 Vue.use(BootstrapVue)
 
+Vue.use(VueAxios, axios)
+
 new Vue({
   router,
   store,
   i18n,
+  vuetify,
   render: function (h) { return h(App) }
 }).$mount('#app')
